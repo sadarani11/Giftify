@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giftify - Choose Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('data:image/jpeg;base64,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') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .form-card {
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.92);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        h4 {
+            font-weight: bold;
+            color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-card">
+        <h4 class="text-center mb-4">🎂 Find the Perfect Gift</h4>
+        <form method="POST" action="/recommend">
+            <div class="mb-3">
+                <label>Age</label>
+                <input type="number" name="age" class="form-control" placeholder="Enter age" required>
+            </div>
+            <div class="mb-3">
+                <label>Gender</label>
+                <select name="gender" class="form-select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Show Gifts</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
